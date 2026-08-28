@@ -5,7 +5,7 @@ export const en: Content = {
   roleLong: "Senior Full Stack Engineer · C#/.NET · React & TypeScript",
   location: "Campo Grande, MS, Brazil",
   locationShort: "Campo Grande, BR",
-  availability: "Open to new opportunities",
+  availability: "Open to freelance and short-term projects",
   whatsappMessage: "Hi Eduardo — I found your portfolio and would like to talk about a project.",
   ariaMenuToggle: "Toggle menu",
   ariaThemeToggle: "Toggle color theme",
@@ -40,7 +40,7 @@ export const en: Content = {
   },
 
   hero: {
-    badge: "Open to new opportunities",
+    badge: "Open to freelance and short-term projects",
     headingPrefix: "Full-stack software that",
     headingAccent: "ships",
     headingSuffix: "— and keeps running.",
