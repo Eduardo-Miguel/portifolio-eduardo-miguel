@@ -1,5 +1,6 @@
 import { getContent } from "@/lib/content";
 import type { Locale } from "@/lib/i18n";
+import { PhotoCard } from "./photo-card";
 import { Reveal } from "./reveal";
 import { SectionLabel } from "./section-label";
 import { TerminalCard } from "./terminal-card";
@@ -11,8 +12,11 @@ export function About({ locale }: { locale: Locale }) {
     <section id="about" className="border-b border-border/70 py-24">
       <div className="mx-auto max-w-6xl px-6">
         <div className="flex flex-col items-start gap-12 lg:flex-row lg:gap-16">
-          <div className="w-full max-w-sm self-start lg:sticky lg:top-32 lg:w-4/12">
+          <div className="w-full max-w-sm space-y-6 self-start lg:sticky lg:top-32 lg:w-4/12">
             <Reveal>
+              <PhotoCard locale={locale} />
+            </Reveal>
+            <Reveal delay={100}>
               <TerminalCard locale={locale} />
             </Reveal>
           </div>
