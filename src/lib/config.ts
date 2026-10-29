@@ -1,4 +1,4 @@
-const RAW_SITE_URL = process.env.NEXT_PUBLIC_SITE_URL ?? "https://eduardomiguel.dev";
+const RAW_SITE_URL = process.env.NEXT_PUBLIC_SITE_URL ?? "https://eduardo-miguel.vercel.app";
 
 /** Guarantees no trailing slash, so callers can safely do `${siteUrl}/path`. */
 export const siteUrl = RAW_SITE_URL.replace(/\/+$/, "");

@@ -37,19 +37,23 @@ export function Hero({ locale }: { locale: Locale }) {
                 <>
                   I&apos;m <strong className="font-medium text-foreground">Eduardo Miguel</strong>, a{" "}
                   <strong className="font-medium text-foreground">{content.role}</strong>. I build
-                  and modernize production systems in{" "}
+                  websites, online stores and custom systems — like{" "}
+                  <strong className="font-medium text-foreground">Shopemgo</strong> — and stay around
+                  after launch day. Six years of{" "}
                   <strong className="font-medium text-foreground">C#/.NET</strong> and{" "}
-                  <strong className="font-medium text-foreground">React</strong>, and keep them
-                  running long after launch day.
+                  <strong className="font-medium text-foreground">React</strong> in production, for
+                  companies in Brazil and the US.
                 </>
               ) : (
                 <>
                   Sou o <strong className="font-medium text-foreground">Eduardo Miguel</strong>,{" "}
-                  <strong className="font-medium text-foreground">{content.role}</strong>. Eu construo
-                  e modernizo sistemas em produção com{" "}
+                  <strong className="font-medium text-foreground">{content.role}</strong>. Eu crio
+                  sites, lojas virtuais e sistemas sob medida — como o{" "}
+                  <strong className="font-medium text-foreground">Shopemgo</strong> — e continuo
+                  por perto depois do lançamento. Seis anos de{" "}
                   <strong className="font-medium text-foreground">C#/.NET</strong> e{" "}
-                  <strong className="font-medium text-foreground">React</strong>, e mantenho tudo no
-                  ar muito depois do lançamento.
+                  <strong className="font-medium text-foreground">React</strong> em produção, para
+                  empresas no Brasil e nos EUA.
                 </>
               )}
             </p>

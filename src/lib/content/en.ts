@@ -41,9 +41,9 @@ export const en: Content = {
 
   hero: {
     badge: "Open to freelance and short-term projects",
-    headingPrefix: "Full-stack software that",
-    headingAccent: "ships",
-    headingSuffix: "— and keeps running.",
+    headingPrefix: "Take your idea off paper and",
+    headingAccent: "go live",
+    headingSuffix: "— I'll handle the rest.",
     ctaPrimary: "LET'S TALK",
     ctaSecondary: "VIEW WORK",
     locationLabel: "LOCATION",
@@ -78,9 +78,9 @@ export const en: Content = {
     heading: "Where I add the most value",
     items: [
       {
-        title: "Full-Stack Development",
+        title: "Custom Websites & Systems",
         description:
-          "End-to-end features across React/Next.js frontends and C# ASP.NET services — from data model to deployed UI.",
+          "From your company website to a sales and inventory system: I design it, build it, launch it and keep it running — like I did with Shopemgo.",
         icon: "code",
       },
       {
@@ -210,24 +210,23 @@ export const en: Content = {
     placeholderBadge: "PLACEHOLDER",
     items: [
       {
+        name: "Shopemgo",
+        description:
+          "Sales and inventory system for retail stores that I built and run on my own: in-store checkout with camera barcode scanning, stock, promotions, PDF labels and an online catalog that takes orders over WhatsApp.",
+        tags: ["Next.js", "TypeScript", "C# .NET 8", "PostgreSQL", "Docker"],
+        link: { label: "View live", href: "https://shopemgo.com" },
+      },
+      {
         name: "SAJ Rastreamento",
         description:
           "Vehicle and fleet tracking platform built and launched from scratch, now following more than 1,000 vehicles, including trucks, in production.",
         tags: ["React Native", "React", "C# ASP.NET", "SQL Server", "AWS"],
       },
       {
-        name: "Your project here",
-        description:
-          "Swap this card for a real project — edit src/lib/content/en.ts and add a name, short description, stack tags, and a live or repo link.",
-        tags: ["Add", "your", "stack"],
-        placeholder: true,
-      },
-      {
-        name: "Your project here",
-        description:
-          "Swap this card for a real project — edit src/lib/content/en.ts and add a name, short description, stack tags, and a live or repo link.",
-        tags: ["Add", "your", "stack"],
-        placeholder: true,
+        name: "Deadly Scrum",
+        description: "A daily stand-up timer with a sense of humor: keep it under five minutes.",
+        tags: ["Next.js", "TypeScript"],
+        link: { label: "View live", href: "https://deadly-scrum.vercel.app" },
       },
     ],
   },

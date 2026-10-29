@@ -41,9 +41,9 @@ export const pt: Content = {
 
   hero: {
     badge: "Aberto a freelas e projetos pontuais",
-    headingPrefix: "Software full-stack que",
-    headingAccent: "vai ao ar",
-    headingSuffix: "— e continua no ar.",
+    headingPrefix: "Tire sua ideia do papel e",
+    headingAccent: "coloque no ar",
+    headingSuffix: "— eu cuido do resto.",
     ctaPrimary: "VAMOS CONVERSAR",
     ctaSecondary: "VER TRABALHOS",
     locationLabel: "LOCALIZAÇÃO",
@@ -78,9 +78,9 @@ export const pt: Content = {
     heading: "Onde eu mais entrego valor",
     items: [
       {
-        title: "Desenvolvimento Full-Stack",
+        title: "Sites e Sistemas Sob Medida",
         description:
-          "Funcionalidades ponta a ponta em frontends React/Next.js e serviços C# ASP.NET — do modelo de dados até a interface em produção.",
+          "Do site da sua empresa ao sistema de vendas e estoque: eu desenho, construo, coloco no ar e mantenho — como fiz com o Shopemgo.",
         icon: "code",
       },
       {
@@ -210,24 +210,23 @@ export const pt: Content = {
     placeholderBadge: "EXEMPLO",
     items: [
       {
+        name: "Shopemgo",
+        description:
+          "Sistema de vendas e estoque para lojas, que criei e mantenho sozinho: venda no balcão com código de barras pela câmera, estoque, promoções, etiquetas em PDF e um catálogo online que recebe pedidos pelo WhatsApp.",
+        tags: ["Next.js", "TypeScript", "C# .NET 8", "PostgreSQL", "Docker"],
+        link: { label: "Ver online", href: "https://shopemgo.com" },
+      },
+      {
         name: "SAJ Rastreamento",
         description:
           "Plataforma de rastreamento de veículos e frotas construída e lançada do zero, hoje acompanhando mais de 1.000 veículos, incluindo caminhões, em produção.",
         tags: ["React Native", "React", "C# ASP.NET", "SQL Server", "AWS"],
       },
       {
-        name: "Seu projeto aqui",
-        description:
-          "Troque este card por um projeto de verdade — edite src/lib/content/pt.ts e adicione um nome, descrição curta, tags de stack e um link (site ou repositório).",
-        tags: ["Adicione", "seu", "stack"],
-        placeholder: true,
-      },
-      {
-        name: "Seu projeto aqui",
-        description:
-          "Troque este card por um projeto de verdade — edite src/lib/content/pt.ts e adicione um nome, descrição curta, tags de stack e um link (site ou repositório).",
-        tags: ["Adicione", "seu", "stack"],
-        placeholder: true,
+        name: "Deadly Scrum",
+        description: "Um cronômetro de daily bem-humorado: não passe dos cinco minutos.",
+        tags: ["Next.js", "TypeScript"],
+        link: { label: "Ver online", href: "https://deadly-scrum.vercel.app" },
       },
     ],
   },
