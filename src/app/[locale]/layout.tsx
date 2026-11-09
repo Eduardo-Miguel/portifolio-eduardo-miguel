@@ -20,6 +20,8 @@ const jetbrainsMono = JetBrains_Mono({
   display: "swap",
 });
 
+const ogImagePath = (locale: Locale) => `/images/og-${locale}.jpg`;
+
 export function generateStaticParams() {
   return locales.map((locale) => ({ locale }));
 }
@@ -32,6 +34,8 @@ export async function generateMetadata({ params }: { params: Params }): Promise<
   const content = getContent(locale);
   const path = locale === "en" ? "" : `/${locale}`;
   const canonical = `${siteUrl}${path}`;
+  // JPEG estático e leve: o WhatsApp ignora a prévia quando a imagem é grande
+  const image = { url: ogImagePath(locale), width: 1200, height: 630, alt: site.fullName };
 
   return {
     metadataBase: new URL(siteUrl),
@@ -59,11 +63,13 @@ export async function generateMetadata({ params }: { params: Params }): Promise<
       description: content.meta.description,
       locale: content.meta.ogLocale,
       alternateLocale: locale === "en" ? "pt_BR" : "en_US",
+      images: [image],
     },
     twitter: {
       card: "summary_large_image",
       title: content.meta.title,
       description: content.meta.description,
+      images: [image],
     },
     robots: {
       index: true,
@@ -106,7 +112,7 @@ export default async function RootLayout({
     description: content.meta.description,
     url: canonical,
     email: `mailto:${site.email}`,
-    image: `${siteUrl}/opengraph-image`,
+    image: `${siteUrl}${ogImagePath(locale)}`,
     address: {
       "@type": "PostalAddress",
       addressLocality: "Campo Grande",

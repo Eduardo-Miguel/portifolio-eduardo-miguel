@@ -1,8 +1,29 @@
 import { getContent } from "@/lib/content";
+import type { Service } from "@/lib/content/types";
 import type { Locale } from "@/lib/i18n";
 import { serviceIcons } from "./icons";
 import { Reveal } from "./reveal";
 import { SectionLabel } from "./section-label";
+
+function DescriptionWithLink({ description, link }: Pick<Service, "description" | "link">) {
+  const index = link ? description.indexOf(link.text) : -1;
+  if (!link || index < 0) return description;
+
+  return (
+    <>
+      {description.slice(0, index)}
+      <a
+        href={link.href}
+        target="_blank"
+        rel="noopener noreferrer"
+        className="font-medium text-accent underline-offset-4 hover:underline"
+      >
+        {link.text}
+      </a>
+      {description.slice(index + link.text.length)}
+    </>
+  );
+}
 
 export function Services({ locale }: { locale: Locale }) {
   const { services } = getContent(locale);
@@ -23,7 +44,9 @@ export function Services({ locale }: { locale: Locale }) {
                 <div className="group flex h-full flex-col gap-4 bg-surface p-8 transition-colors hover:bg-background">
                   <Icon className="h-6 w-6 text-accent" />
                   <h3 className="text-lg font-semibold text-foreground">{service.title}</h3>
-                  <p className="text-sm leading-relaxed text-foreground/60">{service.description}</p>
+                  <p className="text-sm leading-relaxed text-foreground/60">
+                    <DescriptionWithLink description={service.description} link={service.link} />
+                  </p>
                 </div>
               </Reveal>
             );

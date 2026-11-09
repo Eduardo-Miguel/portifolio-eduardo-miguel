@@ -82,6 +82,7 @@ export const en: Content = {
         description:
           "From your company website to a sales and inventory system: I design it, build it, launch it and keep it running — like I did with Shopemgo.",
         icon: "code",
+        link: { text: "Shopemgo", href: "https://shopemgo.com" },
       },
       {
         title: "Legacy Modernization",
@@ -223,10 +224,10 @@ export const en: Content = {
         tags: ["React Native", "React", "C# ASP.NET", "SQL Server", "AWS"],
       },
       {
-        name: "Deadly Scrum",
-        description: "A daily stand-up timer with a sense of humor: keep it under five minutes.",
-        tags: ["Next.js", "TypeScript"],
-        link: { label: "View live", href: "https://deadly-scrum.vercel.app" },
+        name: "GPP Online",
+        description:
+          "Price proposal generator I built at Ei Soluções: suppliers open it from the public tender's link, put together the quote for each lot, generate the PDF and submit the proposal from the browser.",
+        tags: ["Next.js", "React", "TypeScript", "Tailwind CSS"],
       },
     ],
   },

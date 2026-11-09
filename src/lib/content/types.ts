@@ -8,6 +8,8 @@ export type Service = {
   title: string;
   description: string;
   icon: "code" | "refresh" | "cloud" | "plug" | "review" | "support";
+  // trecho da descrição que vira link
+  link?: { text: string; href: string };
 };
 
 export type StackGroup = {
