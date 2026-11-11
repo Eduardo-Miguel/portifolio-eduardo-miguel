@@ -63,6 +63,7 @@ export const pt: Content = {
     headingSuffix: ".",
     paragraphs: [
       "Seis anos construindo e modernizando sistemas em produção com C#/ASP.NET e React. Atualmente atendendo um cliente nos EUA, migrando aplicações legadas em .NET Framework para .NET 8.",
+      "Por conta própria, projetei, desenvolvi e mantenho a Shopemgo — um sistema de vendas, estoque e catálogo online para lojas pequenas, com várias lojas no mesmo sistema, do banco PostgreSQL e da API em .NET 8 ao front em Next.js e ao pipeline de deploy. Está em produção para uma cliente pagante e abriu o cadastro de lojas pelo próprio lojista em outubro de 2026.",
       "Antes disso, supervisionei uma pequena equipe de produto e lancei o SAJ Rastreamento do zero — uma plataforma web e mobile de rastreamento de veículos que hoje acompanha mais de 1.000 veículos, incluindo caminhões, rodando em React Native, React, C# ASP.NET e SQL Server.",
       "Eu me importo com código que sobrevive ao contato com produção: SOLID, testado, documentado e chato do jeito certo. Fluente em inglês, nativo em português, confortável trabalhando de forma assíncrona em fusos diferentes.",
     ],
@@ -123,11 +124,11 @@ export const pt: Content = {
     groups: [
       {
         label: "Backend",
-        items: ["C#", "ASP.NET Core", "ASP.NET Framework", ".NET 8", "Web Forms", "REST APIs", "Redis"],
+        items: ["C#", "ASP.NET Core", "ASP.NET Framework", ".NET 8", "Web Forms", "REST APIs", "Entity Framework Core", "Dapper", "Redis"],
       },
       {
         label: "Frontend",
-        items: ["React", "Next.js", "React Native", "Angular", "TypeScript", "JavaScript", "HTML", "CSS"],
+        items: ["React", "Next.js", "React Native", "Angular", "TypeScript", "JavaScript", "Tailwind CSS", "HTML", "CSS"],
       },
       {
         label: "Dados",
@@ -135,11 +136,11 @@ export const pt: Content = {
       },
       {
         label: "Cloud & DevOps",
-        items: ["Azure", "Azure DevOps CI/CD", "AWS", "Google Cloud", "Cloudflare", "Git", "GitHub"],
+        items: ["Azure", "Azure DevOps CI/CD", "GitHub Actions", "Docker", "AWS", "Google Cloud", "Oracle Cloud", "Cloudflare", "Vercel", "Git", "GitHub"],
       },
       {
         label: "Práticas",
-        items: ["SOLID", "Design Patterns", "Modernização de Legado", "Testes", "Revisão de Código", "Scrum", "Kanban"],
+        items: ["SOLID", "Design Patterns", "Modernização de Legado", "SaaS Multi-tenant", "Testes", "Revisão de Código", "Scrum", "Kanban"],
       },
     ],
   },
@@ -160,14 +161,25 @@ export const pt: Content = {
         ],
       },
       {
+        title: "Fundador e Desenvolvedor",
+        company: "Shopemgo",
+        companyDetail: "produto próprio · shopemgo.com",
+        date: "Out 2024 — Atual",
+        points: [
+          "Projetei e desenvolvi sozinho um SaaS multi-loja para lojas pequenas: venda no balcão com leitura de código de barras pela câmera, estoque, promoções, fiado, etiquetas em PDF e um catálogo online que recebe pedidos pelo WhatsApp.",
+          "API REST em .NET 8 (JWT, EF Core, Dapper, PostgreSQL, DbUp, testes unitários e de integração) e front em Next.js 15 / React / TypeScript; subdomínio e feature flags por loja, frete pelo Melhor Envio, notificações push.",
+          "Roda em Docker com CI/CD no GitHub Actions e nginx na Oracle Cloud, além de Vercel e Cloudflare Workers. Em produção para uma cliente pagante; cadastro de lojas pelo próprio lojista aberto em out/2026.",
+        ],
+      },
+      {
         title: "Desenvolvedor Full Stack Pleno/Sênior",
         company: "Ei Soluções Inteligentes",
         companyDetail: "Campo Grande, MS",
         date: "Fev 2023 — Jun 2025",
         points: [
           "Desenvolvi e mantive aplicações web em React com Next.js e C# ASP.NET (Framework, Core e Web Forms).",
-          "Diagnostiquei e corrigi erros em produção e atendi chamados de mudança nos sistemas da empresa.",
-          "Oracle SQL, Azure Repos, pipelines no Azure DevOps; code review em Scrum e Kanban.",
+          "Desenvolvi o GPP Online, um gerador de propostas de preço para licitações: o fornecedor abre pelo link da licitação, orça cada lote, gera o PDF e envia a proposta pelo navegador.",
+          "Corrigi erros em produção e atendi chamados de mudança; Oracle SQL, Azure Repos, pipelines no Azure DevOps, code review em Scrum e Kanban.",
         ],
       },
       {

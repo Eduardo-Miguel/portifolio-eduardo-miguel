@@ -63,6 +63,7 @@ export const en: Content = {
     headingSuffix: ".",
     paragraphs: [
       "Six years building and modernizing production systems in C#/ASP.NET and React. Currently contracting for a US client, migrating legacy .NET Framework applications to .NET 8.",
+      "On my own, I designed, built and run Shopemgo — a multi-tenant sales, inventory and online-catalog system for small retail stores, from the PostgreSQL database and the .NET 8 API to the Next.js front end and the deploy pipeline. It runs in production for a paying client and opened self-service sign-up in October 2026.",
       "Before that, I supervised a small product team and shipped SAJ Rastreamento from the ground up — a web and mobile vehicle-tracking platform that now follows more than 1,000 vehicles, including trucks, running on React Native, React, C# ASP.NET and SQL Server.",
       "I care about code that survives contact with production: SOLID, tested, documented, and boring in the best way. Fluent in English, native in Portuguese, comfortable working async across time zones.",
     ],
@@ -123,11 +124,11 @@ export const en: Content = {
     groups: [
       {
         label: "Backend",
-        items: ["C#", "ASP.NET Core", "ASP.NET Framework", ".NET 8", "Web Forms", "REST APIs", "Redis"],
+        items: ["C#", "ASP.NET Core", "ASP.NET Framework", ".NET 8", "Web Forms", "REST APIs", "Entity Framework Core", "Dapper", "Redis"],
       },
       {
         label: "Frontend",
-        items: ["React", "Next.js", "React Native", "Angular", "TypeScript", "JavaScript", "HTML", "CSS"],
+        items: ["React", "Next.js", "React Native", "Angular", "TypeScript", "JavaScript", "Tailwind CSS", "HTML", "CSS"],
       },
       {
         label: "Data",
@@ -135,11 +136,11 @@ export const en: Content = {
       },
       {
         label: "Cloud & DevOps",
-        items: ["Azure", "Azure DevOps CI/CD", "AWS", "Google Cloud", "Cloudflare", "Git", "GitHub"],
+        items: ["Azure", "Azure DevOps CI/CD", "GitHub Actions", "Docker", "AWS", "Google Cloud", "Oracle Cloud", "Cloudflare", "Vercel", "Git", "GitHub"],
       },
       {
         label: "Practices",
-        items: ["SOLID", "Design Patterns", "Legacy Modernization", "Testing", "Code Review", "Scrum", "Kanban"],
+        items: ["SOLID", "Design Patterns", "Legacy Modernization", "Multi-tenant SaaS", "Testing", "Code Review", "Scrum", "Kanban"],
       },
     ],
   },
@@ -160,14 +161,25 @@ export const en: Content = {
         ],
       },
       {
+        title: "Founder & Developer",
+        company: "Shopemgo",
+        companyDetail: "own product · shopemgo.com",
+        date: "Oct 2024 — Present",
+        points: [
+          "Designed and built, alone, a multi-tenant SaaS for small stores: in-store checkout with camera barcode scanning, stock, promotions, store credit, PDF labels and an online catalog that takes orders over WhatsApp.",
+          ".NET 8 REST API (JWT, EF Core, Dapper, PostgreSQL, DbUp, unit and integration tests) and Next.js 15 / React / TypeScript front end; per-store subdomains and feature flags, Melhor Envio shipping, web push.",
+          "Runs on Docker with GitHub Actions CI/CD and nginx on Oracle Cloud, plus Vercel and Cloudflare Workers. In production for a paying retail client; self-service sign-up opened in Oct 2026.",
+        ],
+      },
+      {
         title: "Mid/Senior Full Stack Engineer",
         company: "Ei Soluções Inteligentes",
         companyDetail: "Campo Grande, MS",
         date: "Feb 2023 — Jun 2025",
         points: [
           "Built and maintained web applications in React with Next.js and C# ASP.NET (Framework, Core and Web Forms).",
-          "Diagnosed and fixed production errors and change requests across the company's systems.",
-          "Oracle SQL, Azure Repos, Azure DevOps pipelines; code review under Scrum and Kanban.",
+          "Built GPP Online, a price-proposal generator for public tenders: suppliers open it from the tender's link, quote each lot, generate the PDF and submit from the browser.",
+          "Fixed production errors and change requests; Oracle SQL, Azure Repos, Azure DevOps pipelines, code review under Scrum and Kanban.",
         ],
       },
       {
